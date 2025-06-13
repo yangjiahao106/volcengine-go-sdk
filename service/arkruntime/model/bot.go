@@ -23,6 +23,7 @@ type BotChatCompletionRequest struct {
 	N                 int                      `json:"n,omitempty"`
 	ResponseFormat    *ResponseFormat          `json:"response_format,omitempty"`
 	Metadata          map[string]interface{}   `json:"metadata,omitempty"`
+	Thinking          *Thinking                `json:"thinking,omitempty"`
 }
 
 type BotActionUsage struct {
